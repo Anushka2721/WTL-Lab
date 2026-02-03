@@ -1,0 +1,249 @@
+	<!DOCTYPE html>
+<html>
+<head>
+    <title>GlowUp Cosmetic Shop</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #fff0f5;
+        }
+
+        header {
+            background-color: #d63384;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header img {
+            width: 90px;
+            display: block;
+            margin: auto;
+        }
+
+        nav {
+            background-color: #f8cde4;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            margin: 15px;
+            text-decoration: none;
+            color: #800040;
+            font-weight: bold;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        section {
+            padding: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #800040;
+        }
+
+        .about-img {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .about-img img {
+            width: 280px;
+            border-radius: 10px;
+        }
+
+        .logos img {
+            width: 100px;
+            margin: 15px;
+        }
+
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .product-card {
+            background-color: white;
+            width: 220px;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .product-card img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #800040;
+        }
+
+        th {
+            background-color: #f4b6d2;
+        }
+
+        footer {
+            background-color: #d63384;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="https://cdn-icons-png.flaticon.com/512/2921/2921822.png">
+    <h1>GlowUp Cosmetic Shop</h1>
+    <p>Your Beauty, Our Passion</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#brands">Brands</a>
+    <a href="#products">Products</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="#location">Location</a>
+</nav>
+
+<!-- BANNER -->
+<div class="banner">
+    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348">
+</div>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p style="text-align:center;">
+        <b style="color:#d63384;">GlowUp Cosmetic Shop</b> offers premium
+        beauty, skincare, and makeup products from top brands.
+    </p>
+
+    <div class="about-img">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
+        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03">
+        <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa">
+    </div>
+</section>
+
+<section id="brands">
+    <h2>Our Trusted Brands</h2>
+    <div class="logos" style="text-align:center;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Lakme_Logo.png">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Maybelline_logo.png">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Loreal_logo.png">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Revlon_logo.png">
+    </div>
+</section>
+
+<section id="products">
+    <h2>Featured Products</h2>
+
+    <div class="products">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa">
+            <h4>Lipstick</h4>
+            <p>₹499</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03">
+            <h4>Skincare Kit</h4>
+            <p>₹1299</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348">
+            <h4>Makeup Set</h4>
+            <p>₹1999</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796">
+            <h4>Perfume</h4>
+            <p>₹899</p>
+        </div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Beauty Gallery</h2>
+
+    <div class="about-img">
+        <img src="https://images.unsplash.com/photo-1500839941678-aae14dbfae3b">
+        <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702">
+        <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6">
+    </div>
+</section>
+
+<section>
+    <h2>Promotional Video</h2>
+    <center>
+        <video width="450" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4">
+        </video>
+
+        <br><br>
+
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.mp3">
+        </audio>
+    </center>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <center>
+    <form>
+        Name: <input type="text"><br><br>
+        Email: <input type="email"><br><br>
+        Gender:
+        <input type="radio" name="g"> Male
+        <input type="radio" name="g"> Female<br><br>
+        Message:<br>
+        <textarea rows="4" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Submit"
+        style="background-color:#d63384;color:white;padding:8px;border:none;">
+    </form>
+    </center>
+</section>
+
+<section id="location">
+    <h2>Our Location</h2>
+
+    <iframe
+        src="https://www.google.com/maps?q=Pune,Maharashtra&output=embed"
+        width="100%" height="300">
+    </iframe>
+</section>
+
+<footer>
+    <p>© 2026 GlowUp Cosmetic Shop</p>
+    <p>Follow us on Instagram</p>
+</footer>
+
+</body>
+</html>
