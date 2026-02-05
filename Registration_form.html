@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+
+<style>
+body{
+    background:#f2f2f2;
+    font-family:Arial;
+}
+
+.container{
+    width:400px;
+    background:white;
+    margin:50px auto;
+    padding:25px;
+    border-radius:8px;
+    box-shadow:0 0 10px gray;
+}
+
+h2{
+    text-align:center;
+}
+
+input, textarea{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+}
+
+label{
+    font-weight:bold;
+}
+
+button{
+    width:100%;
+    background:#4CAF50;
+    color:white;
+    padding:10px;
+    border:none;
+    margin-top:15px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#45a049;
+}
+</style>
+
+<script>
+function validateForm(){
+
+    var name = document.myform.name.value;
+    var mobile = document.myform.mobile.value;
+    var email = document.myform.email.value;
+    var address = document.myform.address.value;
+    var pincode = document.myform.pincode.value;
+    var dob = document.myform.dob.value;
+
+    // Name
+    if(name==""){
+        alert("Please enter your name");
+        return false;
+    }
+
+    // Mobile
+    if(mobile==""){
+        alert("Please enter mobile number");
+        return false;
+    }
+    if(mobile.length!=10 || isNaN(mobile)){
+        alert("Mobile number must be 10 digits");
+        return false;
+    }
+
+    // Email
+    if(email==""){
+        alert("Please enter email");
+        return false;
+    }
+    var atpos=email.indexOf("@");
+    var dotpos=email.lastIndexOf(".");
+    if(atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length){
+        alert("Please enter valid email");
+        return false;
+    }
+
+    // Address
+    if(address==""){
+        alert("Please enter address");
+        return false;
+    }
+
+    // Pincode
+    if(pincode==""){
+        alert("Please enter pincode");
+        return false;
+    }
+    if(pincode.length!=6 || isNaN(pincode)){
+        alert("Pincode must be 6 digits");
+        return false;
+    }
+
+    // DOB
+    if(dob==""){
+        alert("Please select Date of Birth");
+        return false;
+    }
+
+    alert("Registration Successful!");
+    return true;
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Registration Form</h2>
+
+<form name="myform" onsubmit="return validateForm()">
+
+<label>Name:</label>
+<input type="text" name="name">
+
+<label>Mobile Number:</label>
+<input type="text" name="mobile">
+
+<label>Email:</label>
+<input type="text" name="email">
+
+<label>Address:</label>
+<textarea name="address"></textarea>
+
+<label>Pin Code:</label>
+<input type="text" name="pincode">
+
+<label>Date of Birth:</label>
+<input type="date" name="dob">
+
+<button type="submit">Register</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
